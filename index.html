@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>YamBoy</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section>
+      <div class="circle">
+
+      </div>
+      <header>
+        <a href="#" class="logo"><h1><span>YamBoy</span></h1></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="https://t.me/theyambot" class="btn">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just Yam<br />It's <span>YamBoy</span></h2>
+          <p>Open everyday between 6pm - 9pm. Orders can start coming in anytime of the day. Delivery only available within ekosodin.</p>
+          <a href="https://t.me/theyambot">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="img/img2.png" class="yamboy">
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="img/img2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#f29f1b')" alt=""></li>
+        <li><img src="img/img1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#eb7495')" alt=""></li>
+        <li><img src="img/img.png" onclick="imgSlider('img/img.png');changeCircleColor('#d752b1')" alt=""></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="https://www.instagram.com/room44.co/"><img src="img/ig.png" width="60px" height="60px"></a></li>
+        <li><a href="https://www.instagram.com/whereisnosa/"><img src="img/twi.png" width="40px" height="40px"></a></li>
+        <li><a href="https://www.instagram.com/room44.co/"><img src="img/mail.png" width="40px" height="40px"></a></li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.yamboy').src = anything;
+      }
+
+      // function changeCircleColor(color){
+      //   const circle = document.querySelector('.circle');
+      //   circle.style.background = color;
+      // }
+    </script>
+
+
+  </body>
+</html>
